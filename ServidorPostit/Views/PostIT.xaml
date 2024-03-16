@@ -11,9 +11,9 @@
             <RotateTransform Angle="10"></RotateTransform>
         </Border.RenderTransform>
         <StackPanel>
-            <TextBlock Text="Titulo" TextAlignment="Center" FontWeight="Bold" FontSize="12" Height="20"></TextBlock>
-            <TextBlock Text="Esto es el contenido del postit" TextAlignment="Justify" Height="80" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"></TextBlock>
-            <TextBlock Text="Remitente" TextAlignment="Right" FontSize="10" Height="15"></TextBlock>
+            <TextBlock Text="{Binding Titulo}" TextAlignment="Center" FontWeight="Bold" FontSize="12" Height="20"></TextBlock>
+            <TextBlock Text="{Binding Contenido}" TextAlignment="Justify" Height="80" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"></TextBlock>
+            <TextBlock Text="{Binding Remitente}" TextAlignment="Right" FontSize="10" Height="15"></TextBlock>
         </StackPanel>
     </Border>
 </UserControl>

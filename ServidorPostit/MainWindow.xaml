@@ -4,13 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServidorPostit"
-        xmlns:vm="clr-namespace:ServidorPostit.ViewModels"
+        xmlns:vm="clr-namespace:ServidorPostit.ViewModels" xmlns:views="clr-namespace:ServidorPostit.Views"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" >
     <Window.DataContext>
         <vm:NotasViewModel></vm:NotasViewModel>
     </Window.DataContext>
     <Grid>
-
+        <views:PizarronView></views:PizarronView>
     </Grid>
 </Window>

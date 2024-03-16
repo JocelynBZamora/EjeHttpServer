@@ -61,7 +61,7 @@ namespace ServidorPostit.Services
                             Contenido = diccionario["contenido"] ?? "",
                             X = double.Parse(diccionario["x"] ?? ""),
                             Y = double.Parse(diccionario["y"] ?? ""),
-                            Remitente = Dns.GetHostEntry(IPAddress.Parse(context.Request.UserHostAddress)).HostName
+                            Remitente = context.Request.RemoteEndPoint.Address.ToString()
                         };
                         Application.Current.Dispatcher.Invoke(() => 
                         {

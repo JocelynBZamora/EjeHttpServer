@@ -7,9 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"  Background="#3535">
     <DockPanel>
-        <TextBlock FontSize="30" Foreground="White" DockPanel.Dock="Top" HorizontalAlignment="Center" Text="Notas de los alumnos" FontFamily="Comic Sans MS"></TextBlock>
-        <Canvas Margin="20">
-
-        </Canvas>
+        <TextBlock Text="Notas de los alumnos" FontSize="30" Foreground="White" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="5" FontFamily="Monocraft"><Run Text="{Binding IP,Mode=OneWay}"></Run></TextBlock>
+        <ItemsControl Margin="20" ItemsSource="{Binding Notas}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas></Canvas>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <local:PostIT Canvas.Top="{Binding Y}" Canvas.Right="{Binding X}"></local:PostIT>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </DockPanel>
 </UserControl>
