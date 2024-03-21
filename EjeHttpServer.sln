@@ -5,7 +5,9 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjeHttpServer", "EjeHttpServer\EjeHttpServer.csproj", "{655179AC-31D6-48FF-86FB-00694561E0B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorPostit", "ServidorPostit\ServidorPostit.csproj", "{26069D2F-4DBC-416F-B469-2D5D56B84E04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServidorPostit", "ServidorPostit\ServidorPostit.csproj", "{26069D2F-4DBC-416F-B469-2D5D56B84E04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajesServer", "MensajesServer\MensajesServer.csproj", "{634349D6-CC25-47E7-AEDA-825D74A1CBFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{26069D2F-4DBC-416F-B469-2D5D56B84E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26069D2F-4DBC-416F-B469-2D5D56B84E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26069D2F-4DBC-416F-B469-2D5D56B84E04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634349D6-CC25-47E7-AEDA-825D74A1CBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634349D6-CC25-47E7-AEDA-825D74A1CBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634349D6-CC25-47E7-AEDA-825D74A1CBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634349D6-CC25-47E7-AEDA-825D74A1CBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
