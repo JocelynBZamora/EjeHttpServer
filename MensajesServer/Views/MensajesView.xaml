@@ -3,11 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:MensajesServer.Views"
+             xmlns:local="clr-namespace:MensajesServer.Views" xmlns:vm="clr-namespace:MensajesServer.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="White">
-        <TextBlock Foreground="Black" Text="Este es un mensaje que enviaremos por la red" HorizontalAlignment="Center" VerticalAlignment="Center"
+    <UserControl.DataContext>
+        <vm:MensajeViewModel></vm:MensajeViewModel>
+    </UserControl.DataContext>
+    <Grid Background="{Binding Mensaje.ColorFondo}">
+        <TextBlock Foreground="{Binding Mensaje.ColorLetra}" Text="{Binding Mensaje.Texto}" HorizontalAlignment="Center" VerticalAlignment="Center"
                    FontSize="50" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
     </Grid>
 </UserControl>

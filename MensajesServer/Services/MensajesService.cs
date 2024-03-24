@@ -39,6 +39,9 @@ namespace MensajesServer.Services
                             MensajeResivido?.Invoke(this,mensaje);
                         });
 
+                        context.Response.StatusCode = 200;
+                        context.Response.Close();
+
                     }
                 }
             }
