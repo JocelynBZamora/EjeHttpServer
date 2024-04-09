@@ -38,7 +38,10 @@ namespace MensajesClienteHttp.Services
                     IPEndPoint= endPoint,
                     KeepAlive = DateTime.Now
                 };
-                Application.Current.Dispatcher.Invoke(new Action(() => { }));
+                Application.Current.Dispatcher.Invoke(new Action(() => {
+                    ServidorResivido?.Invoke(this, server);
+                }
+                ));
 
             }
 
