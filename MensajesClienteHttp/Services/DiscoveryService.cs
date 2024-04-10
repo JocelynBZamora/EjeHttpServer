@@ -12,9 +12,11 @@ namespace MensajesClienteHttp.Services
 {
     public class DiscoveryService
     {
+
         public DiscoveryService()
         {
-            
+            SolicitarServidores();
+            new Thread(RecibirServidor) { IsBackground = true }.Start();
         }
         void SolicitarServidores () 
         {

@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="MensajesClienteHttp.Views.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MensajesClienteHttp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    <DockPanel>
+        <StackPanel Margin="5" Width="250" DockPanel.Dock="Bottom">
+            <Label>Texto:</Label>
+            <TextBox AcceptsReturn="True" Height="50"></TextBox>
+            <Label>Color Fondo:</Label>
+            <ComboBox></ComboBox>
+            <Label>Color Letra:</Label>
+            <ComboBox></ComboBox>
+            <Button Content="Enviar" HorizontalAlignment="Center" Margin="5"></Button>
+        </StackPanel>
+        <DataGrid>
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="Nombre del servidor"></DataGridTextColumn>
+                <DataGridTextColumn Header="Direccion IP"></DataGridTextColumn>
+                <DataGridTextColumn Header="Ultima Conexion"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+    </DockPanel>
+</UserControl>
